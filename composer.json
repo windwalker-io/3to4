@@ -1,0 +1,14 @@
+{
+    "name": "windwalker/3to4",
+    "description": "Windwalker 3 to 4 package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Asika",
+            "email": "asika32764@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
