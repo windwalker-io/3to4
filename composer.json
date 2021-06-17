@@ -11,9 +11,9 @@
     ],
     "minimum-stability": "beta",
     "require": {
-        "lyrasoft/luna": "^1.0",
-        "lyrasoft/warder": "^1.0",
-        "lyrasoft/unidev": "^1.0"
+        "lyrasoft/luna": "dev-3to4",
+        "lyrasoft/warder": "dev-3to4",
+        "lyrasoft/unidev": "dev-3to4"
     },
     "autoload": {
         "psr-4": {
