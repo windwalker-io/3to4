@@ -10,5 +10,15 @@
         }
     ],
     "minimum-stability": "beta",
-    "require": {}
+    "require": {
+        "lyrasoft/luna": "^1.0",
+        "lyrasoft/warder": "^1.0",
+        "lyrasoft/unidev": "^1.0",
+    },
+    "autoload": {
+        "Windwalker\\Legacy\\": "src/Framework",
+        "Windwalker\\Legacy\\Core\\": "src/Core",
+        "Phoenix\\": "src/Phoenix",
+        "W3to4\\": "src/W3to4"
+    }
 }
