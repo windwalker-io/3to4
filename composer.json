@@ -16,9 +16,11 @@
         "lyrasoft/unidev": "^1.0"
     },
     "autoload": {
-        "Windwalker\\Legacy\\": "src/Framework",
-        "Windwalker\\Legacy\\Core\\": "src/Core",
-        "Phoenix\\": "src/Phoenix",
-        "W3to4\\": "src/W3to4"
+        "psr-4": {
+            "Windwalker\\Legacy\\": "src/Framework",
+            "Windwalker\\Legacy\\Core\\": "src/Core",
+            "Phoenix\\": "src/Phoenix",
+            "W3to4\\": "src/W3to4"
+        }
     }
 }
