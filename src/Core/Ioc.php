@@ -23,6 +23,11 @@ use Windwalker\DI\Container;
  */
 abstract class Ioc
 {
+    public static function get(string $id)
+    {
+        return static::factory()->get($id);
+    }
+
     /**
      * getInstance
      *

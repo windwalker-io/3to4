@@ -8,7 +8,7 @@
 
 namespace Windwalker\Legacy\IO;
 
-use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Http\Helper\HeaderHelper;
 
 /**
  * The HeaderInput class.
