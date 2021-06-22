@@ -149,7 +149,7 @@ class W3to4Package extends AbstractPackage implements
 
         $db->getDriver()->useConnection(function (ConnectionInterface $conn) use ($container) {
             $dbo = new MysqlDriver($conn->get());
-            $dbo->setDebug($container->getParam('@debug'));
+            $dbo->setDebug($container->getParam('app.debug'));
             DatabaseFactory::setDefaultDbo($dbo);
 
             $container->share(
