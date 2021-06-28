@@ -26,6 +26,17 @@ class Ioc
 
     public static Container $container;
 
+    public static function getApp(): ApplicationInterface
+    {
+        $container = static::getContainer();
+
+        if ($container->has(AppContext::class)) {
+            return $container->get(AppContext::class);
+        }
+
+        return $container->get(ApplicationInterface::class);
+    }
+
     /**
      * Method to get property App
      *
