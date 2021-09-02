@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace W3to4\Command;
 
-use Admin\Table\Table;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use W3to4\Ioc;
