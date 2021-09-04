@@ -18,6 +18,7 @@
             "Windwalker\\Legacy\\": "src/Framework",
             "Windwalker\\Legacy\\Core\\": "src/Core",
             "Phoenix\\": "src/Phoenix",
+            "Lyrasoft\\Luna\\": "src/Luna",
             "W3to4\\": "src/W3to4"
         }
     }
