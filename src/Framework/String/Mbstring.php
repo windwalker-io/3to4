@@ -35,8 +35,6 @@ namespace Windwalker\Legacy\String;
  * @method  static string eregiReplace(string $pattern, string $replacement, string $string, string $option = "msr")
  *
  * @since  2.0
- *
- * @deprecated Legacy code.
  */
 abstract class Mbstring
 {

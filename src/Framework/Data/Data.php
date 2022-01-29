@@ -189,6 +189,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      *
      * @return \Traversable An instance of an object implementing Iterator or Traversable
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator(get_object_vars($this));
@@ -201,6 +202,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      *
      * @return  boolean
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->exists($offset);
@@ -214,6 +216,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      * @throws  \InvalidArgumentException
      * @return  mixed The value to return.
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->get($offset);
@@ -228,6 +231,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      * @throws  \InvalidArgumentException
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->set($offset, $value);
@@ -241,6 +245,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      * @throws  \InvalidArgumentException
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         // Remove \0 from begin of field name.
@@ -256,6 +261,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
      *
      * @return  int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count(get_object_vars($this));
@@ -501,6 +507,7 @@ class Data implements DataInterface, \IteratorAggregate, \ArrayAccess, \Countabl
     /**
      * @inheritDoc
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return get_object_vars($this);

@@ -193,6 +193,7 @@ class Entity extends Data implements \JsonSerializable
      * @return \ArrayIterator
      * @since   2.0
      */
+    #[\ReturnTypeWillChange]
     public function getIterator($all = false)
     {
         return new \ArrayIterator($this->dump($all));
@@ -350,6 +351,7 @@ class Entity extends Data implements \JsonSerializable
      *
      * @return  boolean
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return $this->hasField($offset);
@@ -363,6 +365,7 @@ class Entity extends Data implements \JsonSerializable
      * @throws  \InvalidArgumentException
      * @return  mixed The value to return.
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->get($offset);
@@ -377,6 +380,7 @@ class Entity extends Data implements \JsonSerializable
      * @throws  \InvalidArgumentException
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->set($offset, $value);
@@ -390,6 +394,7 @@ class Entity extends Data implements \JsonSerializable
      * @throws  \InvalidArgumentException
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         $this->data[$offset] = null;
@@ -400,6 +405,7 @@ class Entity extends Data implements \JsonSerializable
      *
      * @return  int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->data);
@@ -555,6 +561,7 @@ class Entity extends Data implements \JsonSerializable
      *
      * @since   3.1.3
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->data;

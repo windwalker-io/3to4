@@ -195,6 +195,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      *        <b>Traversable</b>
      * @since 5.0.0
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator($this->chop());
@@ -215,6 +216,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      * The return value will be casted to boolean if non-boolean was returned.
      * @since 5.0.0
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         $offset = $offset >= 0 ? $offset : (int) abs($offset) - 1;
@@ -229,6 +231,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      *
      * @return string Can return all value types.
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->getChar($offset);
@@ -249,6 +252,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      * @return void
      * @since 5.0.0
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $string)
     {
         $this->string = Mbstring::substrReplace($this->string, $string, $offset, 1, $this->encoding);
@@ -266,6 +270,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      * @return void
      * @since 5.0.0
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         if ($this->length() < abs($offset)) {
@@ -285,6 +290,7 @@ class StringObject implements \Countable, \ArrayAccess, \IteratorAggregate, Stri
      *        The return value is cast to an integer.
      * @since 5.1.0
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return $this->length();

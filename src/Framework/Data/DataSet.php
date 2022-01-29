@@ -160,6 +160,7 @@ class DataSet implements
      *
      * @return  boolean
      */
+    #[\ReturnTypeWillChange]
     public function offsetExists($offset)
     {
         return isset($this->data[$offset]);
@@ -172,6 +173,7 @@ class DataSet implements
      *
      * @return  mixed The value of this property.
      */
+    #[\ReturnTypeWillChange]
     public function offsetGet($offset)
     {
         return $this->get($offset);
@@ -197,6 +199,7 @@ class DataSet implements
      *
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($offset, $value)
     {
         $this->set($offset, $value);
@@ -209,6 +212,7 @@ class DataSet implements
      *
      * @return  void
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($offset)
     {
         unset($this->data[$offset]);
@@ -299,6 +303,7 @@ class DataSet implements
      *
      * @return  \Traversable The data to be iterator.
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator($this->data);
@@ -333,6 +338,7 @@ class DataSet implements
      *
      * @return  int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->data);
@@ -343,6 +349,7 @@ class DataSet implements
      *
      * @return  string Encoded json string.
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return $this->data;
@@ -776,5 +783,15 @@ class DataSet implements
     public function keys()
     {
         return array_keys($this->data);
+    }
+
+    public function __serialize(): array
+    {
+        return $this->data;
+    }
+
+    public function __unserialize(array $data): void
+    {
+        $this->data = $data;
     }
 }

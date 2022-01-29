@@ -211,6 +211,8 @@ class AbstractDatabaseMapperProxy
             $mapper->setDatasetClass(static::$dataSetClass);
         }
 
+        $mapper->getDispatcher()->addListener(new static());
+
         static::init($mapper);
 
         return $mapper;

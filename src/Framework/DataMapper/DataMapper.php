@@ -50,6 +50,7 @@ use Windwalker\Legacy\Utilities\TypeCast;
  * @method  $this  bind($key = null, $value = null, $dataType = \PDO::PARAM_STR, $length = 0, $driverOptions = [])
  * @method  $this  forUpdate()
  * @method  $this  suffix(string $string)
+ * @deprecated Legacy code
  */
 class DataMapper extends AbstractDataMapper implements DatabaseMapperInterface
 {

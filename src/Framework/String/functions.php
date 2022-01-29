@@ -16,8 +16,6 @@ if (!function_exists('str')) {
      * @param null|string $encoding
      *
      * @return  StringObject
-     *
-     * @deprecated Legacy code.
      */
     function str($string = '', $encoding = StringObject::ENCODING_UTF8)
     {

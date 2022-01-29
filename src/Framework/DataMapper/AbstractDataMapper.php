@@ -1395,7 +1395,7 @@ abstract class AbstractDataMapper implements DataMapperInterface, \IteratorAggre
         if (!$this->dispatcher && class_exists('Windwalker\Legacy\Event\Dispatcher')) {
             $this->dispatcher = new Dispatcher();
 
-            if (is_subclass_of($this, 'Windwalker\Legacy\Evebt\DispatcherAwareInterface')) {
+            if (is_subclass_of($this, 'Windwalker\Legacy\Event\DispatcherAwareInterface')) {
                 ListenerMapper::add($this);
             }
         }
@@ -1468,6 +1468,7 @@ abstract class AbstractDataMapper implements DataMapperInterface, \IteratorAggre
      *
      * @since  3.5.19
      */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return $this->findIterate();

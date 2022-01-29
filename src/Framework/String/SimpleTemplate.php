@@ -14,8 +14,6 @@ use Windwalker\Legacy\Utilities\ArrayHelper;
  * The SimpleTemplate class.
  *
  * @since  2.1.8
- *
- * @deprecated Legacy code.
  */
 abstract class SimpleTemplate
 {

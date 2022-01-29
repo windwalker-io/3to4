@@ -27,8 +27,6 @@ use Windwalker\Legacy\Data\DataSetInterface;
  * @method static tryObject($value, bool $strict = false)
  *
  * @since  3.5.17
- *
- * @deprecated Legacy code.
  */
 abstract class TypeCast
 {
@@ -268,7 +266,7 @@ abstract class TypeCast
             case 'int':
             case 'integer':
                 if ($strict) {
-                    return is_numeric($value) && floor($value) == $value ? (int) $value : null;
+                    return is_numeric($value) && floor((float) $value) == $value ? (int) $value : null;
                 }
 
                 if (is_scalar($value)) {

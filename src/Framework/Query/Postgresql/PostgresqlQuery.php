@@ -384,6 +384,7 @@ class PostgresqlQuery extends Query
      *
      * @since   2.0
      */
+    #[\ReturnTypeWillChange]
     public function offset($offset = 0)
     {
         if (is_null($this->offset)) {
