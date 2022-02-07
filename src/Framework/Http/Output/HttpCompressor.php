@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Output;
+namespace Windwalker\Legacy\Http\Output;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\ResponseInterface;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The HttpCompressor class to support gzip encoding.

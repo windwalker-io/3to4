@@ -6,12 +6,12 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test;
+namespace Windwalker\Legacy\Http\Test;
 
-use Windwalker\Http\AbstractMessage;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Http\Test\Stub\StubMessage;
-use Windwalker\Test\TestCase\AbstractBaseTestCase;
+use Windwalker\Legacy\Http\AbstractMessage;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Test\Stub\StubMessage;
+use Windwalker\Legacy\Test\TestCase\AbstractBaseTestCase;
 
 /**
  * Test class of AbstractMessage
@@ -53,8 +53,8 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::getProtocolVersion
-     * @covers \Windwalker\Http\AbstractMessage::withProtocolVersion
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::getProtocolVersion
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::withProtocolVersion
      */
     public function testWithAndSetProtocolVersion()
     {
@@ -79,8 +79,8 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::getHeader
-     * @covers \Windwalker\Http\AbstractMessage::withHeader
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::getHeader
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::withHeader
      */
     public function testWithAndGetHeader()
     {
@@ -101,7 +101,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::hasHeader
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::hasHeader
      */
     public function testHasHeader()
     {
@@ -118,7 +118,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::getHeaders
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::getHeaders
      */
     public function testGetHeaders()
     {
@@ -140,7 +140,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::getHeaderLine
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::getHeaderLine
      */
     public function testGetHeaderLine()
     {
@@ -158,7 +158,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::withAddedHeader
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::withAddedHeader
      */
     public function testWithAddedHeader()
     {
@@ -181,7 +181,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::withoutHeader
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::withoutHeader
      */
     public function testWithoutHeader()
     {
@@ -206,7 +206,7 @@ class AbstractMessageTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\AbstractMessage::getBody
+     * @covers \Windwalker\Legacy\Http\AbstractMessage::getBody
      */
     public function testWithAndGetBody()
     {

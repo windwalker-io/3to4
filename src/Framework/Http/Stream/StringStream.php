@@ -6,7 +6,7 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Stream;
+namespace Windwalker\Legacy\Http\Stream;
 
 use Psr\Http\Message\StreamInterface;
 

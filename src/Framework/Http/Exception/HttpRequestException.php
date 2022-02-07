@@ -6,7 +6,7 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Exception;
+namespace Windwalker\Legacy\Http\Exception;
 
 /**
  * The HttpRequestException class.

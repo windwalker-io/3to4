@@ -6,13 +6,13 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test;
+namespace Windwalker\Legacy\Http\Test;
 
-use Windwalker\Http\HttpClient;
-use Windwalker\Http\Request\Request;
-use Windwalker\Http\Test\Mock\MockTransport;
-use Windwalker\Uri\Uri;
-use Windwalker\Uri\UriHelper;
+use Windwalker\Legacy\Http\HttpClient;
+use Windwalker\Legacy\Http\Request\Request;
+use Windwalker\Legacy\Http\Test\Mock\MockTransport;
+use Windwalker\Legacy\Uri\Uri;
+use Windwalker\Legacy\Uri\UriHelper;
 
 /**
  * Test class of HttpClient
@@ -93,7 +93,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::request
+     * @covers \Windwalker\Legacy\Http\HttpClient::request
      */
     public function testRequest()
     {
@@ -121,7 +121,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::send
+     * @covers \Windwalker\Legacy\Http\HttpClient::send
      */
     public function testSend()
     {
@@ -137,7 +137,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::options
+     * @covers \Windwalker\Legacy\Http\HttpClient::options
      */
     public function testOptions()
     {
@@ -156,7 +156,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::head
+     * @covers \Windwalker\Legacy\Http\HttpClient::head
      */
     public function testHead()
     {
@@ -175,7 +175,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::get
+     * @covers \Windwalker\Legacy\Http\HttpClient::get
      */
     public function testGet()
     {
@@ -194,7 +194,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::post
+     * @covers \Windwalker\Legacy\Http\HttpClient::post
      */
     public function testPost()
     {
@@ -215,7 +215,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::put
+     * @covers \Windwalker\Legacy\Http\HttpClient::put
      */
     public function testPut()
     {
@@ -236,7 +236,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::delete
+     * @covers \Windwalker\Legacy\Http\HttpClient::delete
      */
     public function testDelete()
     {
@@ -257,7 +257,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::trace
+     * @covers \Windwalker\Legacy\Http\HttpClient::trace
      */
     public function testTrace()
     {
@@ -276,7 +276,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::patch
+     * @covers \Windwalker\Legacy\Http\HttpClient::patch
      */
     public function testPatch()
     {
@@ -297,7 +297,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::getOption
+     * @covers \Windwalker\Legacy\Http\HttpClient::getOption
      * @TODO   Implement testGetOption().
      */
     public function testGetOption()
@@ -313,7 +313,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::setOption
+     * @covers \Windwalker\Legacy\Http\HttpClient::setOption
      * @TODO   Implement testSetOption().
      */
     public function testSetOption()
@@ -329,7 +329,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::getOptions
+     * @covers \Windwalker\Legacy\Http\HttpClient::getOptions
      * @TODO   Implement testGetOptions().
      */
     public function testGetOptions()
@@ -345,7 +345,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::setOptions
+     * @covers \Windwalker\Legacy\Http\HttpClient::setOptions
      * @TODO   Implement testSetOptions().
      */
     public function testSetOptions()
@@ -361,7 +361,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::getTransport
+     * @covers \Windwalker\Legacy\Http\HttpClient::getTransport
      * @TODO   Implement testGetTransport().
      */
     public function testGetTransport()
@@ -377,7 +377,7 @@ class HttpClientTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpClient::setTransport
+     * @covers \Windwalker\Legacy\Http\HttpClient::setTransport
      * @TODO   Implement testSetTransport().
      */
     public function testSetTransport()

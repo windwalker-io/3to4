@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Request;
+namespace Windwalker\Legacy\Http\Test\Request;
 
-use Windwalker\Http\Request\Request;
-use Windwalker\Uri\PsrUri;
+use Windwalker\Legacy\Http\Request\Request;
+use Windwalker\Legacy\Uri\PsrUri;
 
 /**
  * Test class of Request
@@ -51,7 +51,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\Request::getHeaders
+     * @covers \Windwalker\Legacy\Http\Request\Request::getHeaders
      */
     public function testGetHeaders()
     {
@@ -67,7 +67,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\Request::getHeader
+     * @covers \Windwalker\Legacy\Http\Request\Request::getHeader
      */
     public function testGetHeader()
     {
@@ -83,7 +83,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers \Windwalker\Http\Request\Request::hasHeader
+     * @covers \Windwalker\Legacy\Http\Request\Request::hasHeader
      */
     public function testHasHeader()
     {

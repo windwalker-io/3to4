@@ -6,15 +6,15 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Request;
+namespace Windwalker\Legacy\Http\Request;
 
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\UploadedFileInterface;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Helper\ServerHelper;
-use Windwalker\Http\Stream\PhpInputStream;
-use Windwalker\Http\UploadedFile;
-use Windwalker\Uri\PsrUri;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Helper\ServerHelper;
+use Windwalker\Legacy\Http\Stream\PhpInputStream;
+use Windwalker\Legacy\Http\UploadedFile;
+use Windwalker\Legacy\Uri\PsrUri;
 
 /**
  * The ServerRequestFactory class.

@@ -6,9 +6,9 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Transport;
+namespace Windwalker\Legacy\Http\Test\Transport;
 
-use Windwalker\Http\Transport\CurlTransport;
+use Windwalker\Legacy\Http\Transport\CurlTransport;
 
 /**
  * Test class of CurlTransport

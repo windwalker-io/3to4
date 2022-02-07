@@ -6,11 +6,11 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Response;
+namespace Windwalker\Legacy\Http\Response;
 
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The AttachmentResponse class.

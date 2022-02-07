@@ -12,17 +12,17 @@ use Psr\Http\Message\ResponseInterface;
 
 include_once __DIR__ . '/../../../../vendor/autoload.php';
 
-//show($request = \Windwalker\Http\ServerRequestFactory::fromGlobals());
+//show($request = \Windwalker\Legacy\Http\ServerRequestFactory::fromGlobals());
 //
 //show($request->getUri());
 
-$server = \Windwalker\Http\WebHttpServer::create(
+$server = \Windwalker\Legacy\Http\WebHttpServer::create(
     function ($request, ResponseInterface $response, $finalHandler) {
         // $response = $response->withHeader('Content-Type', 'application/json');
 
 //    $response->getBody()->write('Hello World!');
 
-        $response = new \Windwalker\Http\Response\HtmlResponse('<root><f>中文 World!</f></root>');
+        $response = new \Windwalker\Legacy\Http\Response\HtmlResponse('<root><f>中文 World!</f></root>');
 
         $response = $response->withHeader('asd', 123);
 
@@ -30,8 +30,8 @@ $server = \Windwalker\Http\WebHttpServer::create(
 
         return $response;
     },
-    \Windwalker\Http\Request\ServerRequestFactory::createFromGlobals(),
-    new \Windwalker\Http\Response\HtmlResponse()
+    \Windwalker\Legacy\Http\Request\ServerRequestFactory::createFromGlobals(),
+    new \Windwalker\Legacy\Http\Response\HtmlResponse()
 );
 
 $server->listen(

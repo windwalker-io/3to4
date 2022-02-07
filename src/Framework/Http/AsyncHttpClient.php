@@ -6,13 +6,13 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 use Psr\Http\Message\RequestInterface;
-use Windwalker\Http\Promise\PromiseResponse as Promise;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Transport\CurlTransport;
-use Windwalker\Http\Transport\TransportInterface;
+use Windwalker\Legacy\Http\Promise\PromiseResponse as Promise;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Transport\CurlTransport;
+use Windwalker\Legacy\Http\Transport\TransportInterface;
 
 /**
  * The AsyncRequest class.

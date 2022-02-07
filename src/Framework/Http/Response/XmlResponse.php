@@ -6,7 +6,7 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Response;
+namespace Windwalker\Legacy\Http\Response;
 
 /**
  * The XmlResponse class.

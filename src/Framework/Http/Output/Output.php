@@ -6,10 +6,10 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Output;
+namespace Windwalker\Legacy\Http\Output;
 
 use Psr\Http\Message\ResponseInterface;
-use Windwalker\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
 
 /**
  * Standard output object for PHP SAPI.

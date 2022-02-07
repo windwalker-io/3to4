@@ -6,14 +6,14 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Response;
+namespace Windwalker\Legacy\Http\Response;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\AbstractMessage;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Helper\ResponseHelper;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\AbstractMessage;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Helper\ResponseHelper;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The AbstractResponse class.

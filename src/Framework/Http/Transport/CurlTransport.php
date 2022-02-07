@@ -6,17 +6,17 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Transport;
+namespace Windwalker\Legacy\Http\Transport;
 
 use Composer\CaBundle\CaBundle;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\CurlFile;
-use Windwalker\Http\Exception\HttpRequestException;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Response\Response;
-use Windwalker\Utilities\Arr;
+use Windwalker\Legacy\Http\CurlFile;
+use Windwalker\Legacy\Http\Exception\HttpRequestException;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Utilities\Arr;
 
 /**
  * The CurlTransport class.

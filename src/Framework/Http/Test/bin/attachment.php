@@ -10,19 +10,19 @@ use Psr\Http\Message\ResponseInterface;
 
 include_once __DIR__ . '/../../../../vendor/autoload.php';
 
-//show($request = \Windwalker\Http\ServerRequestFactory::fromGlobals());
+//show($request = \Windwalker\Legacy\Http\ServerRequestFactory::fromGlobals());
 //
 //show($request->getUri());
 
-$server = \Windwalker\Http\WebHttpServer::create(
+$server = \Windwalker\Legacy\Http\WebHttpServer::create(
     function ($request, ResponseInterface $response, $finalHandler) {
-        $res = new \Windwalker\Http\Response\AttachmentResponse();
+        $res = new \Windwalker\Legacy\Http\Response\AttachmentResponse();
         $res = $res->withFile(__DIR__ . '/.htaccess');
         $res = $res->withFilename('Hello.txt');
 
         return $res;
     },
-    \Windwalker\Http\Request\ServerRequestFactory::createFromGlobals()
+    \Windwalker\Legacy\Http\Request\ServerRequestFactory::createFromGlobals()
 );
 
 $server->listen(

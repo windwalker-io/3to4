@@ -6,7 +6,7 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Output;
+namespace Windwalker\Legacy\Http\Output;
 
 use Psr\Http\Message\ResponseInterface;
 

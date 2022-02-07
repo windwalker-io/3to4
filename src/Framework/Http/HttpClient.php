@@ -8,7 +8,7 @@
 
 // phpcs:disable
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 if (!interface_exists('Http\Client\HttpClient')) {
     include_once __DIR__ . '/HttpPlugClientInterface.php';
@@ -19,12 +19,12 @@ if (!interface_exists('Http\Client\HttpClient')) {
 use Http\Client\HttpClient as HttpPlugClientInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use Windwalker\Http\Request\Request;
-use Windwalker\Http\Transport\CurlTransport;
-use Windwalker\Http\Transport\TransportInterface;
-use Windwalker\Uri\PsrUri;
-use Windwalker\Uri\Uri;
-use Windwalker\Uri\UriHelper;
+use Windwalker\Legacy\Http\Request\Request;
+use Windwalker\Legacy\Http\Transport\CurlTransport;
+use Windwalker\Legacy\Http\Transport\TransportInterface;
+use Windwalker\Legacy\Uri\PsrUri;
+use Windwalker\Legacy\Uri\Uri;
+use Windwalker\Legacy\Uri\UriHelper;
 
 /**
  * The HttpClient class.

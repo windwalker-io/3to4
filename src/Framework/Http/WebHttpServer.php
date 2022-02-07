@@ -6,16 +6,16 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Windwalker\Http\Helper\ServerHelper;
-use Windwalker\Http\Output\HttpCompressor;
-use Windwalker\Http\Output\OutputInterface;
-use Windwalker\Uri\PsrUri;
-use Windwalker\Uri\UriData;
+use Windwalker\Legacy\Http\Helper\ServerHelper;
+use Windwalker\Legacy\Http\Output\HttpCompressor;
+use Windwalker\Legacy\Http\Output\OutputInterface;
+use Windwalker\Legacy\Uri\PsrUri;
+use Windwalker\Legacy\Uri\UriData;
 
 /**
  * The WebServer class.

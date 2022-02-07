@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UploadedFileInterface;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The UploadedFile class.

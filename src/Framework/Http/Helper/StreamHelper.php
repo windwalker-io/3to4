@@ -6,14 +6,14 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Helper;
+namespace Windwalker\Legacy\Http\Helper;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Output\StreamOutput;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Output\StreamOutput;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The StreamHelper class.

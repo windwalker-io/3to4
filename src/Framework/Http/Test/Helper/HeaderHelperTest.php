@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Helper;
+namespace Windwalker\Legacy\Http\Test\Helper;
 
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Response\Response;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Response\Response;
 
 /**
  * Test class of HeaderHelper
@@ -23,7 +23,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\HeaderHelper::getValue
+     * @covers \Windwalker\Legacy\Http\Helper\HeaderHelper::getValue
      */
     public function testGetValue()
     {
@@ -46,7 +46,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      * @param string $string
      * @param string $expected
      *
-     * @covers       Windwalker\Http\Helper\HeaderHelper::isValidName
+     * @covers       Windwalker\Legacy\Http\Helper\HeaderHelper::isValidName
      * @dataProvider isValidName_Provider
      */
     public function testIsValidName($string, $expected)
@@ -86,7 +86,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      * @param string  $expected
      * @param integer $num
      *
-     * @covers       Windwalker\Http\Helper\HeaderHelper::filter
+     * @covers       Windwalker\Legacy\Http\Helper\HeaderHelper::filter
      * @dataProvider filter_Provider
      */
     public function testFilter($string, $expected, $num)
@@ -136,7 +136,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers        \Windwalker\Http\Helper\HeaderHelper::isValidValue
+     * @covers        \Windwalker\Legacy\Http\Helper\HeaderHelper::isValidValue
      * @dataProvider  isValidValue_Provider
      */
     public function testIsValidValue($string, $expected, $num)
@@ -180,7 +180,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      * @param array $expected
      * @param int   $num
      *
-     * @covers        Windwalker\Http\Helper\HeaderHelper::allToArray
+     * @covers        Windwalker\Legacy\Http\Helper\HeaderHelper::allToArray
      * @dataProvider  allToArray_Provider
      */
     public function testAllToArray($source, $expected, $num)
@@ -224,7 +224,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\HeaderHelper::arrayOnlyContainsString
+     * @covers \Windwalker\Legacy\Http\Helper\HeaderHelper::arrayOnlyContainsString
      */
     public function testArrayOnlyContainsString()
     {
@@ -246,7 +246,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\HeaderHelper::toHeaderLine
+     * @covers \Windwalker\Legacy\Http\Helper\HeaderHelper::toHeaderLine
      */
     public function testToHeaderLine()
     {
@@ -266,7 +266,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\HeaderHelper::normalizeHeaderName
+     * @covers \Windwalker\Legacy\Http\Helper\HeaderHelper::normalizeHeaderName
      */
     public function testNormalizeHeaderName()
     {
@@ -284,7 +284,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers       \Windwalker\Http\Helper\HeaderHelper::isValidProtocolVersion
+     * @covers       \Windwalker\Legacy\Http\Helper\HeaderHelper::isValidProtocolVersion
      *
      * @dataProvider isValidProtocolVersion_Provider
      */
@@ -322,7 +322,7 @@ class HeaderHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers \Windwalker\Http\Helper\HeaderHelper::prepareAttachmentHeaders
+     * @covers \Windwalker\Legacy\Http\Helper\HeaderHelper::prepareAttachmentHeaders
      */
     public function testPrepareAttachmentHeaders()
     {

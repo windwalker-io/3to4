@@ -12,11 +12,11 @@ use Psr\Http\Message\ResponseInterface;
 
 include_once __DIR__ . '/../../../../vendor/autoload.php';
 
-//show($request = \Windwalker\Http\ServerRequestFactory::fromGlobals());
+//show($request = \Windwalker\Legacy\Http\ServerRequestFactory::fromGlobals());
 //
 //show($request->getUri());
 
-$server = \Windwalker\Http\WebHttpServer::createFromRequest(
+$server = \Windwalker\Legacy\Http\WebHttpServer::createFromRequest(
     function (
         $request,
         ResponseInterface $response,
@@ -26,7 +26,7 @@ $server = \Windwalker\Http\WebHttpServer::createFromRequest(
 
 //    $response->getBody()->write('Hello World!');
 
-        $response = new \Windwalker\Http\Response\XmlResponse('<root><f>中文 World!</f></root>');
+        $response = new \Windwalker\Legacy\Http\Response\XmlResponse('<root><f>中文 World!</f></root>');
 
         $response = $response->withHeader('asd', 123);
 
@@ -34,8 +34,8 @@ $server = \Windwalker\Http\WebHttpServer::createFromRequest(
 
         return $response;
     },
-    \Windwalker\Http\Request\ServerRequestFactory::createFromGlobals(),
-    new \Windwalker\Http\Response\HtmlResponse()
+    \Windwalker\Legacy\Http\Request\ServerRequestFactory::createFromGlobals(),
+    new \Windwalker\Legacy\Http\Response\HtmlResponse()
 );
 
 //$server->getOutput()

@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Response;
+namespace Windwalker\Legacy\Http\Test\Response;
 
-use Windwalker\Http\Test\Stub\StubContentTypeResponse;
-use Windwalker\Test\TestHelper;
+use Windwalker\Legacy\Http\Test\Stub\StubContentTypeResponse;
+use Windwalker\Legacy\Test\TestHelper;
 
 /**
  * Test class of AbstractContentTypeResponse
@@ -51,7 +51,7 @@ class AbstractContentTypeResponseTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers \Windwalker\Http\Response\AbstractContentTypeResponse::__construct
+     * @covers \Windwalker\Legacy\Http\Response\AbstractContentTypeResponse::__construct
      */
     public function testConstruct()
     {
@@ -68,7 +68,7 @@ class AbstractContentTypeResponseTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Response\AbstractContentTypeResponse::withContentType
+     * @covers \Windwalker\Legacy\Http\Response\AbstractContentTypeResponse::withContentType
      */
     public function testWithContentType()
     {
@@ -83,7 +83,7 @@ class AbstractContentTypeResponseTest extends \PHPUnit\Framework\TestCase
      * @return  void
      *
      * @throws \ReflectionException
-     * @covers \Windwalker\Http\Response\AbstractContentTypeResponse::normalizeContentType
+     * @covers \Windwalker\Legacy\Http\Response\AbstractContentTypeResponse::normalizeContentType
      */
     public function testNormalizeContentType()
     {

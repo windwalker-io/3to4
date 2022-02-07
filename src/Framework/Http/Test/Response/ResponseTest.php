@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Response;
+namespace Windwalker\Legacy\Http\Test\Response;
 
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * Test class of Response
@@ -51,7 +51,7 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
         // Test no params
         $res = new Response();
 
-        $this->assertInstanceOf('Windwalker\Http\Stream\Stream', $res->getBody());
+        $this->assertInstanceOf('Windwalker\Legacy\Http\Stream\Stream', $res->getBody());
         $this->assertEquals('php://memory', $res->getBody()->getMetadata('uri'));
         $this->assertEquals(200, $res->getStatusCode());
         $this->assertEquals([], $res->getHeaders());
@@ -65,7 +65,7 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
 
         $res = new Response($body, 404, $headers);
 
-        $this->assertInstanceOf('Windwalker\Http\Stream\Stream', $res->getBody());
+        $this->assertInstanceOf('Windwalker\Legacy\Http\Stream\Stream', $res->getBody());
         $this->assertEquals($tmpfile, $res->getBody()->getMetadata('uri'));
         $this->assertEquals(['Flower', 'Sakura'], $res->getHeader('x-foo'));
         $this->assertEquals(['application/json'], $res->getHeader('content-type'));
@@ -84,8 +84,8 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Response\Response::getStatusCode()
-     * @covers \Windwalker\Http\Response\Response::withStatus
+     * @covers \Windwalker\Legacy\Http\Response\Response::getStatusCode()
+     * @covers \Windwalker\Legacy\Http\Response\Response::withStatus
      */
     public function testWithAndGetStatusCode()
     {
@@ -107,7 +107,7 @@ class ResponseTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Response\Response::getReasonPhrase
+     * @covers \Windwalker\Legacy\Http\Response\Response::getReasonPhrase
      */
     public function testGetReasonPhrase()
     {

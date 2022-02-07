@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Output;
+namespace Windwalker\Legacy\Http\Test\Output;
 
-use Windwalker\Http\Output\HttpCompressor;
-use Windwalker\Http\Response\TextResponse;
-use Windwalker\Http\Test\Stub\StubHttpCompressor;
+use Windwalker\Legacy\Http\Output\HttpCompressor;
+use Windwalker\Legacy\Http\Response\TextResponse;
+use Windwalker\Legacy\Http\Test\Stub\StubHttpCompressor;
 
 /**
  * Test class of HttpCompressor
@@ -56,7 +56,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::isSupported
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::isSupported
      */
     public function testIsSupported()
     {
@@ -71,7 +71,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::compress
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::compress
      */
     public function testCompress()
     {
@@ -95,7 +95,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::encode
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::encode
      */
     public function testEncode()
     {
@@ -107,8 +107,8 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::getAcceptEncoding
-     * @covers \Windwalker\Http\Output\HttpCompressor::setAcceptEncoding
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::getAcceptEncoding
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::setAcceptEncoding
      */
     public function testGetAndSetAcceptEncoding()
     {
@@ -124,7 +124,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::checkHeadersSent
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::checkHeadersSent
      */
     public function testCheckHeadersSent()
     {
@@ -138,7 +138,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::checkConnectionAlive
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::checkConnectionAlive
      */
     public function testCheckConnectionAlive()
     {
@@ -152,7 +152,7 @@ class HttpCompressorTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\HttpCompressor::getEncodedBy
+     * @covers \Windwalker\Legacy\Http\Output\HttpCompressor::getEncodedBy
      */
     public function testGetAndSetEncodedBy()
     {

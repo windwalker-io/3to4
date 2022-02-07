@@ -21,7 +21,7 @@ Add this to the require block in your `composer.json`.
 HttpClient is a simple class to make restful request.
 
 ``` php
-use Windwalker\Http\HttpClient;
+use Windwalker\Legacy\Http\HttpClient;
 
 $http = new HttpClient;
 
@@ -58,7 +58,7 @@ $response = $http->request('POST', 'http://example.com/?foo=bar', 'this=is&post=
 Psr7 Request is a immutable object, you have to get the return object every operation.
 
 ``` php
-use Windwalker\Http\Request;
+use Windwalker\Legacy\Http\Request;
 
 $request = new Request;
 
@@ -92,8 +92,8 @@ $response = $http->send($request);
 Use Uri and Json output.
 
 ``` php
-use Windwalker\Http\Request;
-use Windwalker\Uri\PsrUri;
+use Windwalker\Legacy\Http\Request;
+use Windwalker\Legacy\Uri\PsrUri;
 
 $request = (new Request)
     ->withUri(new PsrUri('http://example.com'))
@@ -123,7 +123,7 @@ $response->getStatusCode(); // 200 is OK
 Now support Curl and Steam 2 transports.
 
 ``` php
-use Windwalker\Http\Transport\CurlTransport;
+use Windwalker\Legacy\Http\Transport\CurlTransport;
 
 $options = array(
     'certpath' => '/custom/cert.pem'
@@ -194,9 +194,9 @@ $body->getSize(); // 7
 Use `AsyncHttpClient` to send multiple async requests.
 
 ``` php
-use Windwalker\Http\AsyncHttpClient;
+use Windwalker\Legacy\Http\AsyncHttpClient;
 
-$http = new \Windwalker\Http\AsyncHttpClient;
+$http = new \Windwalker\Legacy\Http\AsyncHttpClient;
 
 // Add request commands to pool.
 $http->get('http://google.com');
@@ -235,7 +235,7 @@ The methods provided in the `Uri` class allow you to manipulate all aspects of a
 
 ``` php
 // new uri object
-$uri = new Windwalker\Uri\Uri;
+$uri = new Windwalker\Legacy\Uri\Uri;
 
 $uri->setHost('http://localhost');
 $uri->setPort('8888');
@@ -324,7 +324,7 @@ $stream = new PhpInputSteam;
 
 $data = $stream->__toString(); // foo=bar
 
-$query = \Windwalker\Uri\UriHelper::parseQuery($data); // array('foo' => 'bar')
+$query = \Windwalker\Legacy\Uri\UriHelper::parseQuery($data); // array('foo' => 'bar')
 ```
 
 Read file:
@@ -348,7 +348,7 @@ $src = new Stream('http://example/test.txt');
 $dest = new Stream('/path/to/local/test.txt');
 
 // Do copy
-\Windwalker\Http\Helper\StreamHelper::copy($src, $dest);
+\Windwalker\Legacy\Http\Helper\StreamHelper::copy($src, $dest);
 
 // Get Data
 $dest->rewind();
@@ -365,7 +365,7 @@ See: [Psr7 StreamInterface](https://github.com/php-fig/fig-standards/blob/master
 A Request object to store server information, like: `$_SERVER`, `$_COOKIE`, `$_REQUEST` etc.
 
 ``` php
-use Windwalker\Http\Request\ServerRequestFactory;
+use Windwalker\Legacy\Http\Request\ServerRequestFactory;
 
 $request = ServerRequestFactory::createFromGlobals();
 
@@ -462,11 +462,11 @@ if (!$files['foo']->getError())
 Windwalker Http provides a set of formatted Responses to return data with different formats.
 
 ``` php
-$response = new \Windwalker\Http\Response\HtmlResponse('<html> ... </html>');
-$response = new \Windwalker\Http\Response\JsonResponse(array('foo' => 'bar'), 200, $headers);
-$response = new \Windwalker\Http\Response\XmlResponse(new \SimpleXMLElement('<root />'), 200, $headers);
-$response = new \Windwalker\Http\Response\RedirectResponse($url, 301);
-$response = new \Windwalker\Http\Response\AttachmentResponse('file');
+$response = new \Windwalker\Legacy\Http\Response\HtmlResponse('<html> ... </html>');
+$response = new \Windwalker\Legacy\Http\Response\JsonResponse(array('foo' => 'bar'), 200, $headers);
+$response = new \Windwalker\Legacy\Http\Response\XmlResponse(new \SimpleXMLElement('<root />'), 200, $headers);
+$response = new \Windwalker\Legacy\Http\Response\RedirectResponse($url, 301);
+$response = new \Windwalker\Legacy\Http\Response\AttachmentResponse('file');
 ```
 
 ## More About Psr 7

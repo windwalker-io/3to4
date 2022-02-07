@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Stream;
+namespace Windwalker\Legacy\Http\Test\Stream;
 
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Test\TestCase\AbstractBaseTestCase;
-use Windwalker\Test\TestHelper;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Test\TestCase\AbstractBaseTestCase;
+use Windwalker\Legacy\Test\TestHelper;
 
 /**
  * Test class of Stream
@@ -22,7 +22,7 @@ class StreamTest extends AbstractBaseTestCase
     /**
      * Test instance.
      *
-     * @var \Windwalker\Http\Stream\Stream
+     * @var \Windwalker\Legacy\Http\Stream\Stream
      */
     protected $instance;
 
@@ -62,7 +62,7 @@ class StreamTest extends AbstractBaseTestCase
         $resource = fopen('php://memory', Stream::MODE_READ_WRITE_RESET);
         $stream = new Stream($resource);
 
-        $this->assertInstanceOf('Windwalker\Http\Stream\Stream', $stream);
+        $this->assertInstanceOf('Windwalker\Legacy\Http\Stream\Stream', $stream);
 
         $stream = new Stream();
 
@@ -75,7 +75,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::__toString
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::__toString
      */
     public function test__toString()
     {
@@ -100,7 +100,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::close
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::close
      * @throws \ReflectionException
      */
     public function testClose()
@@ -124,7 +124,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::detach
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::detach
      * @throws \ReflectionException
      */
     public function testDetach()
@@ -142,7 +142,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::getSize
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::getSize
      */
     public function testGetSize()
     {
@@ -161,7 +161,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::tell
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::tell
      */
     public function testTell()
     {
@@ -191,7 +191,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::eof
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::eof
      */
     public function testEof()
     {
@@ -226,7 +226,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::isSeekable
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::isSeekable
      */
     public function testIsSeekable()
     {
@@ -244,7 +244,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::seek
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::seek
      */
     public function testSeek()
     {
@@ -269,7 +269,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::rewind
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::rewind
      */
     public function testRewind()
     {
@@ -291,7 +291,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::isWritable
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::isWritable
      */
     public function testIsWritable()
     {
@@ -305,7 +305,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::write
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::write
      */
     public function testWrite()
     {
@@ -333,7 +333,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::isReadable
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::isReadable
      */
     public function testIsReadable()
     {
@@ -348,7 +348,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::read
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::read
      */
     public function testRead()
     {
@@ -371,7 +371,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::getContents
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::getContents
      */
     public function testGetContents()
     {
@@ -389,7 +389,7 @@ class StreamTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Stream\Stream::getMetadata
+     * @covers \Windwalker\Legacy\Http\Stream\Stream::getMetadata
      */
     public function testGetMetadata()
     {

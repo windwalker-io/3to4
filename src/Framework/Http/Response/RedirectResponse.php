@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Response;
+namespace Windwalker\Legacy\Http\Response;
 
 use Psr\Http\Message\UriInterface;
-use Windwalker\Http\Stream\NullStream;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Stream\NullStream;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The RedirectResponse class.
@@ -28,7 +28,7 @@ class RedirectResponse extends Response
      */
     public function __construct($uri, $status = 303, array $headers = [])
     {
-        if ($uri instanceof UriInterface || $uri instanceof \Windwalker\Uri\UriInterface) {
+        if ($uri instanceof UriInterface || $uri instanceof \Windwalker\Legacy\Uri\UriInterface) {
             $uri = (string) $uri;
         }
 

@@ -6,9 +6,9 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Helper;
+namespace Windwalker\Legacy\Http\Test\Helper;
 
-use Windwalker\Http\Helper\ResponseHelper;
+use Windwalker\Legacy\Http\Helper\ResponseHelper;
 
 /**
  * Test class of ResponseHelper
@@ -22,7 +22,7 @@ class ResponseHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ResponseHelper::getPhrase
+     * @covers \Windwalker\Legacy\Http\Helper\ResponseHelper::getPhrase
      */
     public function testGetPhrase()
     {
@@ -40,7 +40,7 @@ class ResponseHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ResponseHelper::validateStatus
+     * @covers \Windwalker\Legacy\Http\Helper\ResponseHelper::validateStatus
      */
     public function testValidateStatus()
     {

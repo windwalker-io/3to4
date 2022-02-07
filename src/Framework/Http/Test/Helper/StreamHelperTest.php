@@ -6,12 +6,12 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Helper;
+namespace Windwalker\Legacy\Http\Test\Helper;
 
-use Windwalker\Http\Helper\StreamHelper;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Http\Test\Stub\StubStreamOutput;
+use Windwalker\Legacy\Http\Helper\StreamHelper;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Test\Stub\StubStreamOutput;
 
 /**
  * Test class of StreamHelper
@@ -25,7 +25,7 @@ class StreamHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\StreamHelper::copy
+     * @covers \Windwalker\Legacy\Http\Helper\StreamHelper::copy
      */
     public function testCopy()
     {
@@ -42,7 +42,7 @@ class StreamHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\StreamHelper::copyTo
+     * @covers \Windwalker\Legacy\Http\Helper\StreamHelper::copyTo
      */
     public function testCopyTo()
     {
@@ -60,7 +60,7 @@ class StreamHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\StreamHelper::copyFrom
+     * @covers \Windwalker\Legacy\Http\Helper\StreamHelper::copyFrom
      */
     public function testCopyFrom()
     {
@@ -74,7 +74,7 @@ class StreamHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\StreamHelper::sendAttachment
+     * @covers \Windwalker\Legacy\Http\Helper\StreamHelper::sendAttachment
      */
     public function testSendAttachment()
     {

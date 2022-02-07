@@ -6,15 +6,15 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Request;
+namespace Windwalker\Legacy\Http\Request;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;
-use Windwalker\Http\AbstractMessage;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Uri\PsrUri;
+use Windwalker\Legacy\Http\AbstractMessage;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Uri\PsrUri;
 
 /**
  * The AbstractRequest class.

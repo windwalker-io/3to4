@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
 
 /**
  * The AbstractMessage class.

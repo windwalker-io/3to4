@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Test\Stub;
+namespace Windwalker\Legacy\Http\Test\Stub;
 
-use Windwalker\Http\Output\Output;
-use Windwalker\Http\Response\Response;
+use Windwalker\Legacy\Http\Output\Output;
+use Windwalker\Legacy\Http\Response\Response;
 
 /**
  * The MockOutput class.

@@ -6,15 +6,15 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Transport;
+namespace Windwalker\Legacy\Http\Transport;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Helper\HeaderHelper;
-use Windwalker\Http\Helper\StreamHelper;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Helper\HeaderHelper;
+use Windwalker\Legacy\Http\Helper\StreamHelper;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The StreamTransport class.

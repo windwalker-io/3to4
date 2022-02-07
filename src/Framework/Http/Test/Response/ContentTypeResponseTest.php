@@ -6,14 +6,14 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Response;
+namespace Windwalker\Legacy\Http\Test\Response;
 
-use Windwalker\Http\Response\EmptyResponse;
-use Windwalker\Http\Response\HtmlResponse;
-use Windwalker\Http\Response\JsonResponse;
-use Windwalker\Http\Response\RedirectResponse;
-use Windwalker\Http\Response\XmlResponse;
-use Windwalker\Test\TestCase\AbstractBaseTestCase;
+use Windwalker\Legacy\Http\Response\EmptyResponse;
+use Windwalker\Legacy\Http\Response\HtmlResponse;
+use Windwalker\Legacy\Http\Response\JsonResponse;
+use Windwalker\Legacy\Http\Response\RedirectResponse;
+use Windwalker\Legacy\Http\Response\XmlResponse;
+use Windwalker\Legacy\Test\TestCase\AbstractBaseTestCase;
 
 /**
  * Test class of EmptyResponse

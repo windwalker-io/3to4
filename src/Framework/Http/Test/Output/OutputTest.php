@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Output;
+namespace Windwalker\Legacy\Http\Test\Output;
 
-use Windwalker\Http\Response\TextResponse;
-use Windwalker\Http\Test\Stub\StubOutput;
+use Windwalker\Legacy\Http\Response\TextResponse;
+use Windwalker\Legacy\Http\Test\Stub\StubOutput;
 
 /**
  * Test class of Output
@@ -51,7 +51,7 @@ class OutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\Output::respond
+     * @covers \Windwalker\Legacy\Http\Output\Output::respond
      */
     public function testRespond()
     {
@@ -85,7 +85,7 @@ class OutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\Output::sendBody
+     * @covers \Windwalker\Legacy\Http\Output\Output::sendBody
      */
     public function testSendBody()
     {
@@ -103,7 +103,7 @@ class OutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\Output::header
+     * @covers \Windwalker\Legacy\Http\Output\Output::header
      */
     public function testHeader()
     {
@@ -126,7 +126,7 @@ class OutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\Output::sendHeaders
+     * @covers \Windwalker\Legacy\Http\Output\Output::sendHeaders
      */
     public function testSendHeaders()
     {
@@ -161,7 +161,7 @@ class OutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\Output::sendStatusLine
+     * @covers \Windwalker\Legacy\Http\Output\Output::sendStatusLine
      */
     public function testSendStatusLine()
     {

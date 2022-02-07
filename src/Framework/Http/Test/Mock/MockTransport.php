@@ -6,13 +6,13 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Test\Mock;
+namespace Windwalker\Legacy\Http\Test\Mock;
 
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Transport\AbstractTransport;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Transport\AbstractTransport;
 
 /**
  * The MockTransport class.

@@ -6,9 +6,9 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Test\Stub;
+namespace Windwalker\Legacy\Http\Test\Stub;
 
-use Windwalker\Http\Request\AbstractRequest;
+use Windwalker\Legacy\Http\Request\AbstractRequest;
 
 /**
  * The StubRequest class.

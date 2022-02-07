@@ -6,9 +6,9 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Test\Mock;
+namespace Windwalker\Legacy\Http\Test\Mock;
 
-use Windwalker\Http\Test\Stub\StubStreamOutput;
+use Windwalker\Legacy\Http\Test\Stub\StubStreamOutput;
 
 /**
  * The MockOutput class.

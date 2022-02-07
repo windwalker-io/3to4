@@ -6,14 +6,14 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http;
+namespace Windwalker\Legacy\Http;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Windwalker\Http\Output\Output;
-use Windwalker\Http\Output\OutputInterface;
-use Windwalker\Http\Request\ServerRequestFactory;
-use Windwalker\Http\Response\Response;
+use Windwalker\Legacy\Http\Output\Output;
+use Windwalker\Legacy\Http\Output\OutputInterface;
+use Windwalker\Legacy\Http\Request\ServerRequestFactory;
+use Windwalker\Legacy\Http\Response\Response;
 
 /**
  * The Server class.

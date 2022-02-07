@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Helper;
+namespace Windwalker\Legacy\Http\Test\Helper;
 
-use Windwalker\Http\Helper\ServerHelper;
-use Windwalker\Http\UploadedFile;
+use Windwalker\Legacy\Http\Helper\ServerHelper;
+use Windwalker\Legacy\Http\UploadedFile;
 
 /**
  * Test class of ServerHelper
@@ -23,7 +23,7 @@ class ServerHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ServerHelper::getValue
+     * @covers \Windwalker\Legacy\Http\Helper\ServerHelper::getValue
      */
     public function testGetValue()
     {
@@ -44,7 +44,7 @@ class ServerHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ServerHelper::validateUploadedFiles
+     * @covers \Windwalker\Legacy\Http\Helper\ServerHelper::validateUploadedFiles
      */
     public function testValidateUploadedFiles()
     {
@@ -63,7 +63,7 @@ class ServerHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ServerHelper::getAllHeaders
+     * @covers \Windwalker\Legacy\Http\Helper\ServerHelper::getAllHeaders
      * @TODO   Implement testGetAllHeaders().
      */
     public function testGetAllHeaders()
@@ -79,7 +79,7 @@ class ServerHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Helper\ServerHelper::apacheRequestHeaders
+     * @covers \Windwalker\Legacy\Http\Helper\ServerHelper::apacheRequestHeaders
      * @TODO   Implement testApacheRequestHeaders().
      */
     public function testApacheRequestHeaders()
@@ -95,7 +95,7 @@ class ServerHelperTest extends \PHPUnit\Framework\TestCase
      *
      * @return  void
      *
-     * @covers \Windwalker\Http\Helper\ServerHelper::parseFormData
+     * @covers \Windwalker\Legacy\Http\Helper\ServerHelper::parseFormData
      */
     public function testParseFormData()
     {

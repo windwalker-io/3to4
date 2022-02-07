@@ -6,12 +6,12 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Request;
+namespace Windwalker\Legacy\Http\Test\Request;
 
-use Windwalker\Http\Request\ServerRequest;
-use Windwalker\Http\Request\ServerRequestFactory;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Http\UploadedFile;
+use Windwalker\Legacy\Http\Request\ServerRequest;
+use Windwalker\Legacy\Http\Request\ServerRequestFactory;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Http\UploadedFile;
 
 /**
  * Test class of ServerRequestFactory
@@ -25,7 +25,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::createFromGlobals
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::createFromGlobals
      */
     public function testCreate()
     {
@@ -39,7 +39,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::prepareServers
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::prepareServers
      */
     public function testPrepareServers()
     {
@@ -92,7 +92,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::prepareFiles
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::prepareFiles
      */
     public function testPrepareFiles()
     {
@@ -157,7 +157,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::prepareHeaders
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::prepareHeaders
      */
     public function testPrepareHeaders()
     {
@@ -187,7 +187,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      * @param array  $headers
      * @param string $expected
      *
-     * @covers       \Windwalker\Http\Request\ServerRequestFactory::prepareUri
+     * @covers       \Windwalker\Legacy\Http\Request\ServerRequestFactory::prepareUri
      *
      * @dataProvider prepareUri_Provider
      */
@@ -356,7 +356,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::getHostAndPortFromHeaders
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::getHostAndPortFromHeaders
      * @TODO   Implement testGetHostAndPortFromHeaders().
      */
     public function testGetHostAndPortFromHeaders()
@@ -372,7 +372,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::getRequestUri
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::getRequestUri
      * @TODO   Implement testGetRequestUri().
      */
     public function testGetRequestUri()
@@ -388,7 +388,7 @@ class ServerRequestFactoryTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\ServerRequestFactory::stripQueryString
+     * @covers \Windwalker\Legacy\Http\Request\ServerRequestFactory::stripQueryString
      * @TODO   Implement testStripQueryString().
      */
     public function testStripQueryString()

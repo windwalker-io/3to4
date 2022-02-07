@@ -8,15 +8,15 @@
 
 // phpcs:disable
 
-namespace Windwalker\Http\Test;
+namespace Windwalker\Legacy\Http\Test;
 
 use Psr\Http\Message\ResponseInterface;
-use Windwalker\Http\Request\ServerRequest;
-use Windwalker\Http\Request\ServerRequestFactory;
-use Windwalker\Http\Response\HtmlResponse;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Test\Stub\StubStreamOutput;
-use Windwalker\Http\WebHttpServer;
+use Windwalker\Legacy\Http\Request\ServerRequest;
+use Windwalker\Legacy\Http\Request\ServerRequestFactory;
+use Windwalker\Legacy\Http\Response\HtmlResponse;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Test\Stub\StubStreamOutput;
+use Windwalker\Legacy\Http\WebHttpServer;
 
 date_default_timezone_set('UTC');
 
@@ -69,7 +69,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::listen
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::listen
      */
     public function testListen()
     {
@@ -92,7 +92,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::prepareCache
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::prepareCache
      */
     public function testPrepareCache()
     {
@@ -151,7 +151,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getContentType
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getContentType
      * @TODO   Implement testGetMimeType().
      */
     public function testGetContentType()
@@ -167,7 +167,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::setContentType
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::setContentType
      */
     public function testSetContentType()
     {
@@ -188,7 +188,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getCharSet
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getCharSet
      * @TODO   Implement testGetCharSet().
      */
     public function testGetCharSet()
@@ -204,7 +204,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::setCharSet
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::setCharSet
      * @TODO   Implement testSetCharSet().
      */
     public function testSetCharSet()
@@ -220,7 +220,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getModifiedDate
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getModifiedDate
      * @TODO   Implement testGetModifiedDate().
      */
     public function testGetModifiedDate()
@@ -236,7 +236,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::setModifiedDate
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::setModifiedDate
      * @TODO   Implement testSetModifiedDate().
      */
     public function testSetModifiedDate()
@@ -252,7 +252,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getUriData
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getUriData
      */
     public function testGetUriData()
     {
@@ -296,7 +296,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::setUriData
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::setUriData
      * @TODO   Implement testSetUriData().
      */
     public function testSetUriData()
@@ -312,7 +312,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::__get
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::__get
      * @TODO   Implement test__get().
      */
     public function test__get()
@@ -328,7 +328,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getCompressor
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getCompressor
      * @TODO   Implement testGetCompressor().
      */
     public function testGetCompressor()
@@ -344,7 +344,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::setCompressor
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::setCompressor
      * @TODO   Implement testSetCompressor().
      */
     public function testSetCompressor()
@@ -360,7 +360,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::getCachable
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::getCachable
      * @TODO   Implement testGetCachable().
      */
     public function testGetCachable()
@@ -376,7 +376,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::cachable
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::cachable
      * @TODO   Implement testCachable().
      */
     public function testCachable()
@@ -392,7 +392,7 @@ class WebHttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\WebHttpServer::createHttpCompressor
+     * @covers \Windwalker\Legacy\Http\WebHttpServer::createHttpCompressor
      * @TODO   Implement testCreateHttpCompressor().
      */
     public function testCreateHttpCompressor()

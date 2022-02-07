@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Windwalker\Http\Test\Stub;
+namespace Windwalker\Legacy\Http\Test\Stub;
 
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Response\AbstractContentTypeResponse;
-use Windwalker\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Response\AbstractContentTypeResponse;
+use Windwalker\Legacy\Http\Stream\Stream;
 
 /**
  * The StubContentTypeResponse class.

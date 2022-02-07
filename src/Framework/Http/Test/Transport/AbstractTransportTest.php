@@ -6,15 +6,15 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Transport;
+namespace Windwalker\Legacy\Http\Test\Transport;
 
 use Psr\Http\Message\StreamInterface;
-use Windwalker\Http\Request\Request;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Http\Stream\StringStream;
-use Windwalker\Http\Transport\AbstractTransport;
-use Windwalker\Uri\PsrUri;
-use Windwalker\Uri\UriHelper;
+use Windwalker\Legacy\Http\Request\Request;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Stream\StringStream;
+use Windwalker\Legacy\Http\Transport\AbstractTransport;
+use Windwalker\Legacy\Uri\PsrUri;
+use Windwalker\Legacy\Uri\UriHelper;
 
 /**
  * Test class of CurlTransport

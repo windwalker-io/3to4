@@ -6,15 +6,15 @@
  * @license    GNU General Public License version 2 or later;
  */
 
-namespace Windwalker\Http\Request;
+namespace Windwalker\Legacy\Http\Request;
 
 use Psr\Http\Message\MessageInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UploadedFileInterface;
-use Windwalker\Http\Helper\ServerHelper;
-use Windwalker\Http\Stream\PhpInputStream;
+use Windwalker\Legacy\Http\Helper\ServerHelper;
+use Windwalker\Legacy\Http\Stream\PhpInputStream;
 
 /**
  * Representation of an incoming, server-side HTTP request.

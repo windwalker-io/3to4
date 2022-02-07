@@ -6,9 +6,9 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Promise;
+namespace Windwalker\Legacy\Http\Promise;
 
-use Windwalker\Http\Response\Response;
+use Windwalker\Legacy\Http\Response\Response;
 
 /**
  * The PromiseResponse class.

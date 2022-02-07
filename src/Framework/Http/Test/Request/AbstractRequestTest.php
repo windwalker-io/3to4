@@ -6,13 +6,13 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Request;
+namespace Windwalker\Legacy\Http\Test\Request;
 
-use Windwalker\Http\Request\AbstractRequest;
-use Windwalker\Http\Stream\Stream;
-use Windwalker\Http\Test\Stub\StubRequest;
-use Windwalker\Test\TestCase\AbstractBaseTestCase;
-use Windwalker\Uri\PsrUri;
+use Windwalker\Legacy\Http\Request\AbstractRequest;
+use Windwalker\Legacy\Http\Stream\Stream;
+use Windwalker\Legacy\Http\Test\Stub\StubRequest;
+use Windwalker\Legacy\Test\TestCase\AbstractBaseTestCase;
+use Windwalker\Legacy\Uri\PsrUri;
 
 /**
  * Test class of AbstractRequest
@@ -59,10 +59,10 @@ class AbstractRequestTest extends AbstractBaseTestCase
         // Test no params
         $request = new StubRequest();
 
-        $this->assertInstanceOf('Windwalker\Uri\PsrUri', $request->getUri());
+        $this->assertInstanceOf('Windwalker\Legacy\Uri\PsrUri', $request->getUri());
         $this->assertEquals('', (string) $request->getUri());
         $this->assertNull($request->getMethod());
-        $this->assertInstanceOf('Windwalker\Http\Stream\Stream', $request->getBody());
+        $this->assertInstanceOf('Windwalker\Legacy\Http\Stream\Stream', $request->getBody());
         $this->assertEquals('php://memory', $request->getBody()->getMetadata('uri'));
         $this->assertEquals([], $request->getHeaders());
 
@@ -77,10 +77,10 @@ class AbstractRequestTest extends AbstractBaseTestCase
 
         $request = new StubRequest($uri, $method, $body, $headers);
 
-        $this->assertInstanceOf('Windwalker\Uri\PsrUri', $request->getUri());
+        $this->assertInstanceOf('Windwalker\Legacy\Uri\PsrUri', $request->getUri());
         $this->assertEquals('http://example.com/?foo=bar#baz', (string) $request->getUri());
         $this->assertEquals('POST', $request->getMethod());
-        $this->assertInstanceOf('Windwalker\Http\Stream\Stream', $request->getBody());
+        $this->assertInstanceOf('Windwalker\Legacy\Http\Stream\Stream', $request->getBody());
         $this->assertEquals($tmpfile, $request->getBody()->getMetadata('uri'));
         $this->assertEquals(['Flower', 'Sakura'], $request->getHeader('x-foo'));
         $this->assertEquals(['application/json'], $request->getHeader('content-type'));
@@ -101,8 +101,8 @@ class AbstractRequestTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\AbstractRequest::getRequestTarget
-     * @covers \Windwalker\Http\Request\AbstractRequest::withRequestTarget
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::getRequestTarget
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::withRequestTarget
      */
     public function testWithAndGetRequestTarget()
     {
@@ -127,8 +127,8 @@ class AbstractRequestTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\AbstractRequest::getMethod
-     * @covers \Windwalker\Http\Request\AbstractRequest::withMethod
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::getMethod
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::withMethod
      */
     public function testWithAndGetMethod()
     {
@@ -152,12 +152,12 @@ class AbstractRequestTest extends AbstractBaseTestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Request\AbstractRequest::getUri
-     * @covers \Windwalker\Http\Request\AbstractRequest::withUri
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::getUri
+     * @covers \Windwalker\Legacy\Http\Request\AbstractRequest::withUri
      */
     public function testWithAndGetUri()
     {
-        $this->assertInstanceOf('Windwalker\Uri\PsrUri', $this->instance->getUri());
+        $this->assertInstanceOf('Windwalker\Legacy\Uri\PsrUri', $this->instance->getUri());
         $this->assertEquals('', (string) $this->instance->getUri());
 
         $request = $this->instance->withUri(new PsrUri('http://example.com/flower/sakura?foo=bar#baz'), true);

@@ -6,10 +6,10 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test\Output;
+namespace Windwalker\Legacy\Http\Test\Output;
 
-use Windwalker\Http\Response\TextResponse;
-use Windwalker\Http\Test\Stub\StubStreamOutput;
+use Windwalker\Legacy\Http\Response\TextResponse;
+use Windwalker\Legacy\Http\Test\Stub\StubStreamOutput;
 
 /**
  * Test class of StreamOutput
@@ -51,7 +51,7 @@ class StreamOutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\StreamOutput::respond
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::respond
      */
     public function testRespond()
     {
@@ -87,7 +87,7 @@ class StreamOutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\StreamOutput::sendBody
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::sendBody
      */
     public function testSendBody()
     {
@@ -101,8 +101,8 @@ class StreamOutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\StreamOutput::getMaxBufferLength
-     * @covers \Windwalker\Http\Output\StreamOutput::setMaxBufferLength
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::getMaxBufferLength
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::setMaxBufferLength
      */
     public function testGetAndSetMaxBufferLength()
     {
@@ -118,8 +118,8 @@ class StreamOutputTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\Output\StreamOutput::getDelay
-     * @covers \Windwalker\Http\Output\StreamOutput::setDelay
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::getDelay
+     * @covers \Windwalker\Legacy\Http\Output\StreamOutput::setDelay
      */
     public function testGetAndSetDelay()
     {

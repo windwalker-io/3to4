@@ -6,7 +6,7 @@
  * @license    LGPL-2.0-or-later
  */
 
-namespace Windwalker\Http\Helper;
+namespace Windwalker\Legacy\Http\Helper;
 
 /**
  * The HttpHelper class.

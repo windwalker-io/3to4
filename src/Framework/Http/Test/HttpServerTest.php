@@ -6,14 +6,14 @@
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
-namespace Windwalker\Http\Test;
+namespace Windwalker\Legacy\Http\Test;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Windwalker\Http\HttpServer;
-use Windwalker\Http\Request\ServerRequest;
-use Windwalker\Http\Response\Response;
-use Windwalker\Http\Test\Stub\StubOutput;
+use Windwalker\Legacy\Http\HttpServer;
+use Windwalker\Legacy\Http\Request\ServerRequest;
+use Windwalker\Legacy\Http\Response\Response;
+use Windwalker\Legacy\Http\Test\Stub\StubOutput;
 
 /**
  * Test class of Server
@@ -86,7 +86,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::createFromGlobals
+     * @covers \Windwalker\Legacy\Http\HttpServer::createFromGlobals
      */
     public function testCreateFromGlobals()
     {
@@ -106,7 +106,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::create
+     * @covers \Windwalker\Legacy\Http\HttpServer::create
      */
     public function testCreate()
     {
@@ -127,7 +127,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::listen
+     * @covers \Windwalker\Legacy\Http\HttpServer::listen
      */
     public function testListen()
     {
@@ -173,7 +173,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::getHandler
+     * @covers \Windwalker\Legacy\Http\HttpServer::getHandler
      */
     public function testGetHandler()
     {
@@ -188,7 +188,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::setHandler
+     * @covers \Windwalker\Legacy\Http\HttpServer::setHandler
      * @TODO   Implement testSetHandler().
      */
     public function testSetHandler()
@@ -204,7 +204,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::getRequest
+     * @covers \Windwalker\Legacy\Http\HttpServer::getRequest
      * @TODO   Implement testGetRequest().
      */
     public function testGetRequest()
@@ -220,7 +220,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::setRequest
+     * @covers \Windwalker\Legacy\Http\HttpServer::setRequest
      * @TODO   Implement testSetRequest().
      */
     public function testSetRequest()
@@ -236,7 +236,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::getOutput
+     * @covers \Windwalker\Legacy\Http\HttpServer::getOutput
      * @TODO   Implement testGetOutput().
      */
     public function testGetOutput()
@@ -252,7 +252,7 @@ class HttpServerTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @covers \Windwalker\Http\HttpServer::setOutput
+     * @covers \Windwalker\Legacy\Http\HttpServer::setOutput
      * @TODO   Implement testSetOutput().
      */
     public function testSetOutput()
