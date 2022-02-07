@@ -1,0 +1,34 @@
+{
+    "name": "windwalker/http",
+    "type": "windwalker-package",
+    "description": "Windwalker Http package",
+    "keywords": ["windwalker", "framework", "http", "psr7", "request"],
+    "homepage": "https://github.com/ventoviro/windwalker-http",
+    "license": "LGPL-2.0-or-later",
+    "require": {
+        "php": ">=7.1.3",
+        "psr/http-message": "1.*",
+        "windwalker/uri": "~3.0",
+        "composer/ca-bundle": "^1.1",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "windwalker/environment": "~3.0",
+        "windwalker/test": "~3.0"
+    },
+    "minimum-stability": "beta",
+    "autoload": {
+        "psr-4": {
+            "Windwalker\\Http\\": ""
+        }
+    },
+    "provide": {
+        "psr/http-message-implementation": "~1.0",
+        "php-http/client-implementation": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.2.x-dev"
+        }
+    }
+}
