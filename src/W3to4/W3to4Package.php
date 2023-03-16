@@ -62,9 +62,9 @@ class W3to4Package extends AbstractPackage implements
     /**
      * W3to4Package constructor.
      */
-    public function __construct(protected ApplicationInterface $app)
+    public function __construct()
     {
-        
+        //
     }
 
     public function install(PackageInstaller $installer): void
@@ -76,7 +76,9 @@ class W3to4Package extends AbstractPackage implements
     {
         include_once __DIR__ . '/functions.php';
 
-        if ($this->app->getClient() === ApplicationInterface::CLIENT_CONSOLE) {
+        $app = $container->get(ApplicationInterface::class);
+
+        if ($app->getClient() === ApplicationInterface::CLIENT_CONSOLE) {
             $container->mergeParameters(
                 'commands',
                 [
@@ -99,11 +101,11 @@ class W3to4Package extends AbstractPackage implements
             // });
         }
         
-        $container->extend(RendererService::class, function (RendererService $rendererService, Container $container) {
+        $container->extend(RendererService::class, function (RendererService $rendererService, Container $container) use ($app) {
 
             $navOptions = RouteUri::MODE_MUTE;
 
-            if ($this->app->isDebug()) {
+            if ($app->isDebug()) {
                 $navOptions |= RouteUri::DEBUG_ALERT;
             }
 
