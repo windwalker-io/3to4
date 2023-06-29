@@ -23,6 +23,7 @@ use W3to4\Command\TemplatesCommand;
 use Windwalker\Core\Application\AppContext;
 use Windwalker\Core\Application\ApplicationInterface;
 use Windwalker\Core\Console\ConsoleApplication;
+use Windwalker\Core\DI\RequestBootableProviderInterface;
 use Windwalker\Core\Events\Web\BeforeAppDispatchEvent;
 use Windwalker\Core\Events\Web\BeforeRequestEvent;
 use Windwalker\Core\Html\HtmlFrame;
@@ -57,7 +58,8 @@ use Windwalker\Legacy\IO\PsrInput;
 class W3to4Package extends AbstractPackage implements
     ServiceProviderInterface,
     BootableProviderInterface,
-    BootableDeferredProviderInterface
+    BootableDeferredProviderInterface,
+    RequestBootableProviderInterface
 {
     /**
      * W3to4Package constructor.
@@ -144,7 +146,7 @@ class W3to4Package extends AbstractPackage implements
         $container->setOptions(Container::AUTO_WIRE);
     }
 
-    public function bootDeferred(Container $container): void
+    public function bootBeforeRequest(Container $container): void
     {
         // DB
         $db = $container->get(DatabaseAdapter::class);
@@ -159,6 +161,11 @@ class W3to4Package extends AbstractPackage implements
                 $dbo
             );
         });
+    }
+
+    public function bootDeferred(Container $container): void
+    {
+        //
     }
 
     #[ListenTo(BeforeAppDispatchEvent::class)]
