@@ -19,6 +19,8 @@ use Windwalker\Legacy\Query\QueryInterface;
 use Windwalker\Legacy\Utilities\Arr;
 use Windwalker\Legacy\Utilities\TypeCast;
 
+use function Windwalker\unwrap_enum;
+
 /**
  * Main Database Mapper class.
  *
@@ -648,6 +650,8 @@ class DataMapper extends AbstractDataMapper implements DatabaseMapperInterface
             if (!$updateNulls && $value === null) {
                 continue;
             }
+
+            $value = unwrap_enum($value);
 
             // Convert to correct type.
             $dataType = DataType::getInstance($this->db->getName());
